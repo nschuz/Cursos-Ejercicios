@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+ 
+<nav class="navbar navbar-light bg-light">
+    <a href="/" class="navbar-brand">Prouct App</a>
+</nav>
+
+<div class="container">
+    <div id="App" class="row pt-5">
+        <div class="col-md-4">
+
+            <div class="card">
+                <div class="card-header">
+                        <h4>Add A Product</h4>
+                </div>
+
+                <form id="product-form"  class="card-body">
+
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Product Name" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" name="" step="0.01" id="price" class="form-control" placeholder="Product Price">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" name="" id="year" value="2020" 
+                        min="1900"
+                        max="2025"
+                        placeholder="Year Product"
+                        class="form-control">
+                    </div>
+
+                    <input type="submit" value="Save" class="btn btn-primary btn-block">
+
+                </form>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-8" id="product-list">
+            
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+ <script src="/app.js"></script>   
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>     
+</body>
+</html>
